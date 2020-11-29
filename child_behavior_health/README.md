@@ -27,7 +27,7 @@ libraries needed:
 
 ## Licensing, Authors, Acknowledgements
 
-The data is obtained from Child and Family Data Archive. You can find the data [here]https://www.childandfamilydataarchive.org/cfda/archives/cfda/studies/31401. 
+The data is obtained from Child and Family Data Archive. You can find the data [here](https://www.childandfamilydataarchive.org/cfda/archives/cfda/studies/31401). 
 
 Montes, Guillermo. The Impact of Childhood Behavior Problems on Child Care
 and Employment Decision-Making: A Nationally Representative Panel Study.
