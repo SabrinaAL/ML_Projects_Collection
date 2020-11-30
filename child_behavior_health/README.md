@@ -10,6 +10,9 @@ libraries needed:
 - seaborn
 
 ## Project Description
+There is an evidence that infant health and development effects each gender differently I examine effects of it on older children. I analyze  boys and girls of age between 0–13 years old within group of health and childhood development problems. Health group contains following illness: Asthma, Heart, Chronic condition, Special needs, Attention problem, More medical issues, Limited ability, PT/OT (aka: special therapy, speech, physical therapy, occupational therapy and/or psychological services), IEP - Individualized Education Program for special kids, and IFSP - Individual Family Service Plan. For childhood development problem I look into the following: ADHD, Behavior, AD, ASD, Aggressive, PDD, and AS.
+
+I primarily focus on the following questions:
 
 - Is there a relation between gender and various childhood behavior and health problems?
 - Can one child have more than one problem? 
@@ -23,6 +26,8 @@ libraries needed:
 
 
 ## Results
+
+The results are discussed in the [article]()
 
 
 ## Licensing, Authors, Acknowledgements
