@@ -15,8 +15,8 @@ There is an evidence that infant health and development effects each gender diff
 I primarily focus on the following questions:
 
 - What are the five most common childhood development problems?
-- What is the relation of children with more than one problem?
-- Is there an effect of more than one problem on gender?
+- How are children affected by multiple development problems? 
+- Is there a gender based effect among children with multiple problems?
 
 
 ## File Descriptions
