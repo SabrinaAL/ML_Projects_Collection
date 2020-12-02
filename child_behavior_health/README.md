@@ -20,8 +20,8 @@ I primarily focus on the following questions:
 
 
 ## File Descriptions
-- data_cleaning.ipynb - notebook for cleaning and preparing data for analysis
-- data_analysis.ipynb - notebook for plotting and analysing data
+
+- child_development_problems.ipynb - notebook for data understanding, preparation and analysis
 
 
 ## Results
