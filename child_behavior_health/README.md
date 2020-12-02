@@ -8,6 +8,7 @@ libraries needed:
 - numpy
 - matplotlib
 - seaborn
+- collections
 
 ## Project Description
 Several studies have shown that gender is a significant predictor of development in childhood and boys are usually at greater vulnerability than girls. It is important to note that gender differences in health appear early. If boys are born prematurely they tend to have more neonatal complications than girls. Since there is an evidence that infant health affects each gender differently I was curious to examine its effects on older children. I analyze boys and girls of age between 0–13 years old within group of health and childhood behavior problems. Health group contains following illnesses: asthma, heart condition, chronic condition, children with special needs, attention problem, children who require more medical help, limited ability, PT/OT (aka: special therapy, speech, physical therapy, occupational therapy and/or psychological services), IEP — Individualized Education Program for special kids, and IFSP — Individual Family Service Plan. For childhood behavior problems I look into the following: ADHD, behavior problem, AD, ASD, aggressive behavior, PDD, and AS.
