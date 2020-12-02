@@ -26,7 +26,7 @@ I primarily focus on the following questions:
 
 ## Results
 
-The results are discussed in the [article](...)
+The results are discussed in the [article](https://aliyeva-sabrina.medium.com/insight-into-childhood-development-problems-724ec4812ea0)
 
 
 ## Licensing, Authors, Acknowledgements
