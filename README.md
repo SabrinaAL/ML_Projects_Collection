@@ -5,7 +5,6 @@ Collection of Data Science Projects from Udacity Nanodegree
    Understanding relation between behavior/health problems and gender of children between 0–13 years old. 
    Questions that can be ansewered with the analysis are following:
    
-   1. Is there a relation between gender and various childhood behavior and health problems?
-   2. Can one child have more than one problem? 
-   3. What are the 5 most common childhood problems?
-   4. Is there a relation between childhood problems?
+- What are the five most common childhood development problems?
+- How are children affected by multiple development problems?
+- Is there a gender based effect among children with multiple problems?
