@@ -4,15 +4,14 @@ import numpy as np
 from sqlalchemy import create_engine
 
 def load_data(messages_filepath, categories_filepath):
-      """
-      Function:
-      takes two csv files returns a merged dataFrame
-      Args:
+    """
+    Function: takes two csv files returns a merged dataFrame
+    Args:
       messages_filepath (String): path to csv file that contains messages
       categories_filepath (String): path to csv file that contains categories
-      Return:
+    Return:
       df (DataFrame): A dataframe of messages and categories
-      """
+    """
     # load messages dataset
     messages = pd.read_csv(messages_filepath)
     # load categories dataset
@@ -23,7 +22,8 @@ def load_data(messages_filepath, categories_filepath):
 
 
 def clean_data(df):
-    """Clean data.
+    """
+    Function: Clean data.
     Args:
         df: pandas.DataFrame. dataFrame contains disaster messages and categories.
     Return:
@@ -73,11 +73,10 @@ def clean_data(df):
 
 def save_data(df, database_filename):
     """
-    Function:
-    Save the Dataframe df in a sql database
+    Function: Save the Dataframe df in a sql database
     Args:
-    df (DataFrame): messages and categories dataframe
-    database_filename (str): database name
+        df (DataFrame): messages and categories dataframe
+        database_filename (str): database name
     """
     engine = create_engine('sqlite:///{}'.format(database_filename))
     df.to_sql('DisasterResponse', engine, index=False)
