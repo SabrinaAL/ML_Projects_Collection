@@ -80,7 +80,7 @@ def save_data(df, database_filename):
     database_filename (str): database name
     """
     engine = create_engine('sqlite:///{}'.format(database_filename))
-    df.to_sql('disaster_messages', engine, index=False)
+    df.to_sql('DisasterResponse', engine, index=False)
 
 
 def main():
