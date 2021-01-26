@@ -24,7 +24,7 @@ Here is a visualization of frequent words that appear in each category:
 
 ## File Descriptions
 
-- Data Analysis .ipynb: Useful mix of analysis and vizualization of the disaster messages
+- Data Analysis .ipynb: Useful mix of scripts for analysis and vizualization of the disaster messages
 - workspace/ETL Pipeline Preparation.ipynb: workspace to create python script for workspace/data/process_data.py
 - workspace/ML Pipeline Preparation.ipynb: workspace to create python script for workspace/model/train_classifier.py
 - workspace/data/process_data.py: A data cleaning pipeline that cleans data and stores in database
