@@ -21,6 +21,14 @@ Here is a visualization of frequent words that appear in each category:
 
 ![alt text](https://github.com/SabrinaAL/Data-Science-Nanodegree/blob/master/disaster_response/important_words.png)
 
+Screenshot of the app home page:
+
+![alt text](https://github.com/SabrinaAL/Data-Science-Nanodegree/blob/master/disaster_response/Training%20DataSet.png)
+
+Screenshot of the predicted categories for message "We need water":
+
+![alt text](https://github.com/SabrinaAL/Data-Science-Nanodegree/blob/master/disaster_response/ExampleOutput.png)
+
 
 ## File Descriptions
 
