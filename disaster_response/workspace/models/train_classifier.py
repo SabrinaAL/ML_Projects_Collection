@@ -47,18 +47,8 @@ def tokenize(text):
     Return:
         clean_tokens (list): a list of message words
     """
-    
-    # removing stop words and Stemming the remaining words in the message
-    stemmer = SnowballStemmer("english")
-    stemSentence = ""
-    for word in text.split():
-        stem = stemmer.stem(word)
-        stemSentence += stem
-        stemSentence += " "
-    stemSentence = stemSentence.strip()
 
-
-    tokens = word_tokenize(stemSentence)
+    tokens = word_tokenize(text)
     # Lemmatize
     lemmatizer = WordNetLemmatizer()
     clean_tokens = []
