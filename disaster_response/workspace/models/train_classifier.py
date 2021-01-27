@@ -67,7 +67,6 @@ def tokenize(text):
         clean_tokens.append(clean_tok)
     return clean_tokens
 
-
 def build_model():
     """
     Function: Build model.
