@@ -13,9 +13,9 @@ from sklearn.multioutput import MultiOutputClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
-from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import train_test_split, GridSearchCV
 import pickle
-from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
 from nltk.stem.snowball import SnowballStemmer 
 
 
@@ -30,12 +30,13 @@ def load_data(database_filepath):
         Y (DataFrame) : target 
     """
     engine = create_engine('sqlite:///{}'.format(database_filepath))
-    df = pd.read_sql_table('DisasterResponse', engine)
+    df = pd.read_sql_table('disaster_response', engine)
     # Features
     X = df['message']  
     # Target
     Y = df.iloc[:, 4:]
-    return X, Y
+    category_names = df.columns[4:]
+    return X, Y, category_names
 
 
 def tokenize(text):
@@ -75,29 +76,17 @@ def build_model():
     """
     # Set pipeline
     pipeline = Pipeline([
-        ('trasform', TfidfVectorizer(tokenizer=tokenize,sublinear_tf=True,
-                                        stop_words = 'english',
-                                        strip_accents='unicode',
-                                        analyzer='word',
-                                        token_pattern=r'\w{1,}',
-                                        ngram_range=(1,4),
-                                        dtype=np.float32,
-                                        max_features = 10000)),
+        ('trasform', TfidfVectorizer(tokenizer=tokenize)),
          
-        ('classifier', MultiOutputClassifier(AdaBoostClassifier(
-                                            base_estimator = DecisionTreeClassifier(class_weight='balanced'),
-                                            learning_rate = 0.3,
-                                            n_estimators = 100),
-                                            random_state = 42))])
+        ('classifier', MultiOutputClassifier(AdaBoostClassifier(random_state = 42)))])
 
     # Set parameters for gird search
     parameters = {
-        'classifier__estimator__learning_rate': [0.1, 0.2, 0.4],
-        'classifier__estimator__n_estimators': [500, 1000, 2000]
-    }
+        "classifier__estimator__learning_rate": [0.5, 1.0],
+        "classifier__estimator__n_estimators": [20, 40]}
 
     # Set grid search
-    grid_cv = GridSearchCV(estimator = pipeline, param_grid = parameters, cv = 5, scoring='f1_weighted', verbose = 2)
+    grid_cv = GridSearchCV(estimator = pipeline, param_grid = parameters, verbose = 2, n_jobs = -1)
 
     return grid_cv
 
@@ -116,6 +105,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     for i, col in enumerate(Y_test):
         print('Category {}: {}'.format(i + 1, col))
         print(classification_report(Y_test[col], y_pred[:, i]))
+        
 
 
 
