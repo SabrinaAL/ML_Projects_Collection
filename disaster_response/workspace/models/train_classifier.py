@@ -15,7 +15,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split, GridSearchCV
 import pickle
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
 from nltk.stem.snowball import SnowballStemmer 
 
 
