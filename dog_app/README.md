@@ -32,7 +32,7 @@ In this project, I built a pipeline that can be used within a web or mobile app 
 
 ## Results
 
-The results and details are discussed in the [article](https://aliyeva-sabrina.medium.com/insight-into-childhood-development-problems-724ec4812ea0)
+The results and details are discussed in the [article](https://aliyeva-sabrina.medium.com/what-dog-breed-do-you-look-like-a1ade21c70e6)
 
 
 ## Licensing, Authors, Acknowledgements
